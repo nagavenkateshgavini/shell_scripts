@@ -101,3 +101,24 @@ for FILE in $FILES
     mv "$FILE" "new_${COUNTER}.txt"
     ((COUNTER--))
 done
+
+# While loop
+LINE=1
+while read -r CURRENT_LINE
+  do
+    echo "$LINE: $CURRENT_LINE"
+    ((LINE++))
+done < "sample.t"
+
+# Functions
+function hello(){
+  echo "Hello world"
+}
+
+hello
+
+function hello_with_params(){
+  echo "hello $1 and his age is $2"
+}
+
+hello_with_params "venkat" "16"

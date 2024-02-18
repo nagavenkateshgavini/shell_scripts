@@ -1,0 +1,4 @@
+I am testing script
+with shell
+in my terminal
+
